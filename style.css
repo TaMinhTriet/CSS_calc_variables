@@ -1,4 +1,4 @@
-.nav {
+/* .nav {
   height: 100px;
   background-color: #333;
   width: calc(100% / 2);
@@ -10,4 +10,50 @@
   background-color: #121aef;
   height: calc(100vh - 100px);
   margin: 0 auto;
+} */
+
+/* khai báo root hoặc html sẽ áp dụng cho toàn trang */
+:root {
+  --box-width: 300px;
+  --box-height: 100px;
+  --box-color: #ff0000;
+  --box-margin: 20px;
+}
+
+.box1 {
+  width: calc(var(--box-width) * 2);
+  height: var(--box-height);
+  background-color: var(--box-color);
+  margin: var(--box-margin) auto;
+}
+
+.box2 {
+  width: calc(var(--box-width) * 2);
+  height: var(--box-height);
+  background-color: var(--box-color);
+  margin: var(--box-margin) auto;
+}
+
+.box3 {
+  width: calc(var(--box-width) * 2);
+  height: var(--box-height);
+  background-color: var(--box-color);
+  margin: var(--box-margin) auto;
+}
+
+.detail {
+  --p_font-size: 30px;
+  /* font-size: var(--p_font-size); */
+}
+
+.detail span {
+  font-size: var(--p_font-size);
+}
+
+.content {
+  --background-box: #05e4bb;
+}
+
+.box4 {
+  background-color: var(--background-box);
 }
